@@ -10,6 +10,14 @@ namespace WebApi2.Controllers
 {
     public class AccountController : ApiController
     {
+        public IHttpActionResult Get()
+        {
+            ApiDbContext db = new ApiDbContext();
+
+            List<Kullanici> kullanicis = db.Users.ToList();
+            return Ok(kullanicis);
+        }
+       
         public IHttpActionResult Post(Kullanici model)
         {
             // instance 2 scope arası kullan ve imha et (bellekten temizle)..sadece Idisposble interfacesindnen türeyen sınıflarda kullanılabilir...
