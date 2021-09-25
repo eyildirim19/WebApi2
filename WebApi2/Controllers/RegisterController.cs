@@ -10,7 +10,6 @@ namespace WebApi2.Controllers
 {
     public class RegisterController : ApiController
     {
-
         public IHttpActionResult Post(Kullanici model)
         {
             ApiDbContext dbContext = new ApiDbContext();
