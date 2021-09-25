@@ -92,12 +92,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202109250653093_DbInitialü.cs" />
     <Compile Include="Migrations\202109250653093_DbInitialü.designer.cs">
       <DependentUpon>202109250653093_DbInitialü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109250705153_KullaniciRequiredAlanlar.cs" />
+    <Compile Include="Migrations\202109250705153_KullaniciRequiredAlanlar.designer.cs">
+      <DependentUpon>202109250705153_KullaniciRequiredAlanlar.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApiDbContext.cs" />
@@ -115,11 +120,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109250653093_DbInitialü.resx">
       <DependentUpon>202109250653093_DbInitialü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109250705153_KullaniciRequiredAlanlar.resx">
+      <DependentUpon>202109250705153_KullaniciRequiredAlanlar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
